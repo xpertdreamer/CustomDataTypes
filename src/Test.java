@@ -1,18 +1,19 @@
-import customtreemap.CustomTreeMap;
+import customhashmap.CustomHashMap;
 
 public class Test {
     public static void main(String[] args) {
-        CustomTreeMap<Integer, String> map = new CustomTreeMap<>();
-        map.put(12, "Hello World!");
-        map.put(16, "Hello!");
-        map.put(19, "!");
-        map.put(10, "I");
-        System.out.println(map.get(10));
-        System.out.println();
-        map.remove(19);
-        System.out.println(map.get(19));
-        System.out.println();
-        map.clear();
-        System.out.println(map.get(12));
+        CustomHashMap<String, Integer> map = new CustomHashMap<>();
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
+        map.put("Four", 4);
+        System.out.println(map.put("Eleven", 11));
+
+        System.out.println(map.containsKey("Three"));
+        System.out.println(map.containsKey("Four"));
+        System.out.println(map.size());
+        System.out.println(map.get("Two"));
+        map.put("Two", 22);
+        System.out.println(map.get("Two"));
     }
 }
