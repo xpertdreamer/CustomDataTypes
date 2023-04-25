@@ -15,5 +15,7 @@ public class Test {
         System.out.println(map.get("Two"));
         map.put("Two", 22);
         System.out.println(map.get("Two"));
+        map.remove("Three");
+        System.out.println(map.get("Three"));
     }
 }
