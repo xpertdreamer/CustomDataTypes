@@ -2,7 +2,7 @@ package CustomLinkedList;
 
 public class CustomLinkedListMono<E> {
     Node<E> first;
-    int size = 0;
+    private int size = 0;
 
     public int getSize() {
         return size;
